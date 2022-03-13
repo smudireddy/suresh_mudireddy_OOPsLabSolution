@@ -13,6 +13,7 @@ public class NewHireManger {
 		
 		do {
 			
+			System.out.println("\n ------ Employee Details ------ \n");
 			System.out.println("Please Enter First Name : ");
 			String firstName = scanner.next();
 		
@@ -32,8 +33,6 @@ public class NewHireManger {
 			System.out.println("\n\n Select 0 to exit and ");
 			exitChoice = scanner.nextInt();
 			
-			System.out.println("\n Employee Details \n" + exitChoice);
-		
 		}while(exitChoice != 0);
 	}
 	
