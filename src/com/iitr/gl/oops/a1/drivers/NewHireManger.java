@@ -30,7 +30,7 @@ public class NewHireManger {
 				service.showCredentials(emp);
 			}
 			
-			System.out.println("\n\n Select 0 to exit and other number to continue");
+			System.out.println("\n\n Select 0 to exit and other number to continue  ");
 			exitChoice = scanner.nextInt();
 			
 		}while(exitChoice != 0);
