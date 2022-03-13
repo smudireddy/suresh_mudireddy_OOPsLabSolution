@@ -28,8 +28,10 @@ public class NewHireManger {
 		
 			service.showCredentials(emp);
 			
-			System.out.println("\n\n Select 0 to exit");
+			System.out.println("\n\n Select 0 to exit and ");
 			exitChoice = scanner.nextInt();
+			
+			System.out.println("\n Employee Details \n" + exitChoice);
 		
 		}while(exitChoice != 0);
 	}
