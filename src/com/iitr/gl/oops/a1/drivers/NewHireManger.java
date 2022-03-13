@@ -60,7 +60,7 @@ public class NewHireManger {
 			break;
 
 		default:
-			System.out.println("Please enter valid option");
+			System.out.println("Invalid option selected");
 			break;
 		}
 		return department;
