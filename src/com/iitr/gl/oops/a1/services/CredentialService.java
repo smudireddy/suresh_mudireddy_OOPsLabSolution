@@ -47,6 +47,7 @@ public class CredentialService {
     	
 		String password = generatePassword(passwordLen);
 		
+		System.out.println("\n");
 		System.out.printf(CREDENTIALS_DISPLAY_FORMAT, emp.getFirstName(), ((emp.getLastName() != null)?emp.getLastName():""));
 		System.out.println("\nEmail ---> " + email);
 		System.out.println("Password ---> " + password);
