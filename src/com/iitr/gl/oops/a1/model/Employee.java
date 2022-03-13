@@ -1,19 +1,19 @@
 package com.iitr.gl.oops.a1.model;
 
 public class Employee {
-	
+
 	private static final String DEFAULT_DEPARTMENT = "tech";  
-	
+
 	private String firstName;
 	private String lastName;
 	private String department;
-	
+
 	public Employee(String firstName, String lastName, String department) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.department = department;
-		
+
 		if(department == null) {
 			this.department = DEFAULT_DEPARTMENT;
 		}
@@ -42,9 +42,9 @@ public class Employee {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	
+
 	public String getUserID() {
-		
+
 		if(this.firstName == null) {
 			return null;
 		}
