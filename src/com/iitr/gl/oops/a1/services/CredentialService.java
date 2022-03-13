@@ -29,7 +29,7 @@ public class CredentialService {
     	if(emp == null || emp.getUserID() == null) {
     		return null;
     	}
-    	return new String(emp.getUserID() + "@" + emp.getDepartment() + COMPANY_DOMAIN);
+    	return new String(emp.getUserID() + "@" + emp.getDepartment() + "." + COMPANY_DOMAIN);
 	}
     
     public void showCredentials(Employee emp) {

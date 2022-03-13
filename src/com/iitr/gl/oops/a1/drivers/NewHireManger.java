@@ -3,7 +3,6 @@ package com.iitr.gl.oops.a1.drivers;
 import com.iitr.gl.oops.a1.services.CredentialService;
 import com.iitr.gl.oops.a1.model.*;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class NewHireManger {
 
@@ -21,12 +20,14 @@ public class NewHireManger {
 			String lastName = scanner.next();
 			
 			String department = getDepartmentCode(scanner);
+			
+			if(department != null) {
 		
-			Employee emp = new Employee(firstName, lastName, department);
+				Employee emp = new Employee(firstName, lastName, department);
+				CredentialService service = new CredentialService();
 		
-			CredentialService service = new CredentialService();
-		
-			service.showCredentials(emp);
+				service.showCredentials(emp);
+			}
 			
 			System.out.println("\n\n Select 0 to exit and ");
 			exitChoice = scanner.nextInt();
@@ -42,7 +43,6 @@ public class NewHireManger {
 		
 		System.out.println("Please enter the department from the following \n 1.Technical \n 2.Admin \n 3.Human Resource \n 4.Legal \n");
 		int deptCode = scanner.nextInt();
-			
 		
 		switch(deptCode) {
 		case 1:
